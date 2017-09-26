@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+ 
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+    version="2.0">
+<description>Facebook Login Button Tag</description>
+<tlib-version>2.1</tlib-version>
+<short-name>fblogin</short-name>
+<uri>dungeon/tlds/fblogin</uri>
+<tag>
+    <name>facebookLogin</name>
+    <tag-class>org.kerrin.dungeon.controller.customtags.FBLogin</tag-class>
+    <body-content>empty</body-content>
+    <attribute>
+	    <name>facebook</name>
+	    <required>true</required>
+	    <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+	    <name>buttonText</name>
+	    <required>false</required>
+	    <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+	    <name>characterId</name>
+	    <required>false</required>
+	    <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+	    <name>dungeonId</name>
+	    <required>false</required>
+	    <rtexprvalue>true</rtexprvalue>
+    </attribute>
+</tag>
+</taglib>

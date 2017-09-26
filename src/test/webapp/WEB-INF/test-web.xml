@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+    <bean id="testAccountCurrencyService" name="testAccountCurrencyService" class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="org.kerrin.dungeon.service.AccountCurrencyService"/>
+    </bean>
+    <bean id="testAccountRoleService" name="testAccountRoleService" class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="org.kerrin.dungeon.service.AccountRoleService"/>
+    </bean>
+    <bean id="testAccountService" name="testAccountService" class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="org.kerrin.dungeon.service.AccountService"/>
+    </bean>
+    <bean id="testCharacterService" name="testCharacterService" class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="org.kerrin.dungeon.service.CharacterService"/>
+    </bean>
+    <bean id="testCustomUserDetailsService" name="testCustomUserDetailsService" class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="org.kerrin.dungeon.service.CustomUserDetailsService"/>
+    </bean>
+    <bean id="testInventoryService" name="testInventoryService" class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="org.kerrin.dungeon.service.InventoryService"/>
+    </bean>
+</beans>

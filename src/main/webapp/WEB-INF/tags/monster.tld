@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+ 
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+    version="2.0">
+<description>Monster Display Tag</description>
+<tlib-version>2.1</tlib-version>
+<short-name>monster</short-name>
+<uri>dungeon/tlds/monster</uri>
+<tag>
+    <name>monsterDisplay</name>
+    <tag-class>org.kerrin.dungeon.controller.customtags.MonsterDisplay</tag-class>
+    <body-content>empty</body-content>
+    <attribute>
+	    <name>spanId</name>
+	    <required>true</required>
+	    <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+	    <name>monster</name>
+	    <required>true</required>
+	    <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+	    <name>monsterType</name>
+	    <required>false</required>
+	    <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+	    <name>level</name>
+	    <required>false</required>
+	    <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+	    <name>dead</name>
+	    <required>false</required>
+	    <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+	    <name>fullDetails</name>
+	    <required>false</required>
+	    <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+	    <name>hoverAbove</name>
+	    <required>false</required>
+	    <rtexprvalue>true</rtexprvalue>
+    </attribute>
+</tag>
+</taglib>

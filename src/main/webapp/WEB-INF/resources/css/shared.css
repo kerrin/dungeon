@@ -1,0 +1,1441 @@
+body {
+    background-color: #909090;
+}
+
+h1 {
+	font-size: 1.5em;
+}
+
+h2 {
+	font-size: 1.2em;
+}
+
+h3 {
+	font-size: 1em;
+}
+
+h1, h2, h3 {
+    color: navy;
+    margin: 0px;
+}
+
+a, .link  {
+	color: blue;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:hover, .link:hover {
+	color: #0080c0;
+	text-decoration: italic;
+}
+
+th, label {
+	color: #000066;
+	font-weight: bold;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+table.borderLessTable th, table.borderLessTable td {
+	border: 0px;
+	border-collapse: collapse;
+}
+
+table.center td {
+	text-align: center;
+}
+
+table.black td, table.black th {
+	background-color: #2d3e50;
+	border: 1px solid grey;
+}
+
+table.black th {
+	color: white;
+	font-weight: bold;
+}
+
+table.black {
+	color: white;
+}
+
+table.black a {
+	color: silver;
+}
+
+label > input, .hidden { /* HIDE RADIO */
+	display:none;
+}
+label > input + img, 
+input[type="radio"]+label > img, 
+input[type="checkbox"]+label > img { /* IMAGE STYLES */
+	cursor:pointer;
+	border:2px solid transparent;
+}
+label > input:checked + img, 
+input[type="radio"]:checked+label > img,
+input[type="checkbox"]:checked+label > img { /* (CHECKED) IMAGE STYLES */
+	border:2px solid #0a0;
+}
+
+.menuAdmin {
+	margin: 0px;
+	position: absolute;
+	top: 5px;
+	left: 60px;
+	height: 20px;
+	width: 395px;
+}
+
+.menu, .menuLoggedOut {
+	margin: 0px;
+  position: absolute;
+  top: 7px;
+  left: 50px;
+  height: 1ex;
+  width: 395px;	
+  list-style-type: none;
+}
+
+.navMenu{
+  background-color: #2d3e50;
+  width: 100%;
+  height: 26px;
+  margin: 0px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.navMenuOption {
+  list-style-type: none;
+  float: left;
+  margin: -1px 2px;
+  padding: 0px 2px 0px 3px;
+  font-size: 0.9em;
+}
+
+.summaryFrame, .menuLink{
+  color: silver;
+}
+
+.menuOption {
+	float: left;
+	border-top: 1px solid #666666;
+	border-right: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	border-left: 1px solid #666666;
+	background-color: #dddddd;
+	margin: -1px 1px;
+	padding: 0px 2px 0px 2px;
+}
+
+.menuOptionSelected {
+	border-bottom: 3px solid #666666;
+}
+
+.endBar {
+	margin: 0px;
+	position: absolute;
+	top: 25px;
+	left: 0px;
+	height: 5px;
+	width: 100%;
+}
+
+.viewTypeFrame {
+	margin: 0px;
+	position: absolute;
+	top: 2px;
+	left: 445px;
+	height: 20px;
+	width: calc(100% - 770px);
+	min-width: 200px;
+  text-align: center;
+}
+ 
+
+.charClassSelector {
+	width: 95px;
+  	height: 75px;
+  	float: left;
+  	border: 2px solid blue;
+}
+
+.charClassSelector:hover {
+	margin: -2px;
+	border: 3px solid #0080c0;
+}
+
+.charClassSelectorInner {
+	text-align: center; 
+	display: block; 
+	width:95px;
+}
+
+.charClassSelector25 {
+	width: 25px;
+  	height: 25px;
+  	float: left;
+}
+
+.charactersClassFilter {
+	height: 30px;
+	float: left;
+}
+
+.error {
+	position: absolute;
+	top: 25%;
+	left: 25%;
+	width: 50%;
+	min-width: 100px;
+	height: 50%;
+	min-height: 100px;
+	color: red;
+	font-weight: bold;
+	font-size: 1.5em;
+	z-index: 150;
+	background: #d2b48c;
+    -webkit-box-shadow: inset 0 0 50px 20px #8b6736;
+    box-shadow: inset 0 0 50px 20px #8b6736;
+}
+
+.errorText {
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	color: red;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+.errorCloseFrame {
+	position: absolute;
+	top: 0px;
+	right: 5px;
+	height: 15px;
+	width: 5%;
+	min-width: 15px;
+	text-align: right;
+	text-color: red;
+}
+
+.message {
+	position: absolute;
+	top: 25%;
+	left: 25%;
+	width: 50%;
+	min-width: 100px;
+	height: 50%;
+	min-height: 100px;
+	color: blue;
+	font-weight: bold;
+	font-size: 1.5em;
+	z-index: 150;
+	background: #d2b48c;
+    -webkit-box-shadow: inset 0 0 50px 20px #8b6736;
+    box-shadow: inset 0 0 50px 20px #8b6736;
+}
+
+.messageText {
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	color: blue;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+.messageCloseFrame {
+	position: absolute;
+	top: 0px;
+	right: 5px;
+	height: 15px;
+	width: 5%;
+	min-width: 15px;
+	text-align: right;
+	text-color: blue;
+}
+
+.lightbox {
+    text-align: left; 
+    background-color: #6FFBEE;
+    color:#111; 
+    margin-right:2px; 
+    font-size:18px; 
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: none;
+}
+
+.dungeonLogs {
+	pointer-events: all;
+    text-align: left; 
+    background: #d2b48c;
+    -webkit-box-shadow: inset 0 0 50px 20px #8b6736;
+    box-shadow: inset 0 0 50px 20px #8b6736;
+    color:#111; 
+    margin-right:2px; 
+    font-size:18px; 
+}
+
+.enchantPopUp {
+	max-width: 525px;
+	max-height: 290px;
+	left: 5%;
+	bottom: 5%;
+	position: absolute;
+	pointer-events: all;
+    text-align: left; 
+    background: #d2b48c;
+    -webkit-box-shadow: inset 0 0 50px 20px #8b6736;
+    box-shadow: inset 0 0 50px 20px #8b6736;
+    color:#111; 
+    margin-right:2px; 
+    font-size:18px; 
+    z-index: 150;
+}
+
+.equipmentDetails {
+    text-align: left; 
+    background-color: #6FFBEE;
+    color:#111; 
+    margin-right:2px; 
+    font-size:18px;
+}
+
+.monster {
+	height: 35px;
+	width: 90px;
+	background-color: #AAAA80;
+	border: 2px solid red;
+	overflow: hidden;
+	float: left;
+}
+
+.monsterFull {
+	height: 200px;
+    width: calc(100% - 10px);
+	background-color: #AAAA80;
+	border: 2px solid red;
+	overflow: auto;
+	float: left;
+}
+
+.monsterFullHealth {
+	clear: both;
+}
+
+.monsterTypeTrash {
+	background-color: #AAAA80;
+}
+
+.monsterTypeElite {
+	background-color: #dddd00;
+}
+
+.monsterTypeBoss {
+	background-color: #dd8040;
+}
+
+.charLarge {
+	height: 100px;
+	width: 120px;
+	background-color: #AAAA80;
+	border: 2px solid red;
+	overflow: hidden;
+	float: left;
+}
+
+.itemLarge, .found_itemLarge {
+	height: 55px;
+	width: 90px;
+	background-color: #AAAA80;
+	border: 2px solid red;
+	overflow: hidden;
+	float: left;
+}
+
+.enchantFrame {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: 150;
+	pointer-events: none;
+}
+
+.hiddenFullPage {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: 110;
+	pointer-events: none;
+}
+
+.dungeonToken {
+	vertical-align: text-top; 
+	height: 20px; 
+	width: 20px;
+}
+
+.characterSummary {
+	display:inline-block;
+	position: relative; 
+	top: -100px; 
+	left: 5px; 
+	height: 100px;
+	width: 120px;
+	z-index: 100;
+}
+
+.levelXp {
+	display:inline-block;
+	position: relative;
+	left: 0px;
+	bottom: 10px;
+	width: 120px;
+	height: 30px;
+	z-index: 60;
+}
+	
+.levelFrame, .levelFrameReducedLevel, 
+.levelFrameTall, .levelFrameTallReducedLevel, 
+.levelFrameTallPopup, .levelFrameTallPopupReducedLevel,
+.boostItemLevelFrame, .boostItemLevelFrameReducedLevel, 
+.boostItemLevelFrameTall, .boostItemLevelFrameTallReducedLevel, 
+.boostItemLevelFrameTallPopup, .boostItemLevelFrameTallPopupReducedLevel {
+	display:inline-block;
+	vertical-align: text-top; 
+	height: 30px; 
+	width: 30px;
+	position: relative;
+	top: 0px;
+	left: 0px;
+}
+
+.levelFrameTall, .levelFrameTallReducedLevel, 
+.levelFrameTallPopup, .levelFrameTallPopupReducedLevel,
+.boostItemLevelFrameTall, .boostItemLevelFrameTallReducedLevel, 
+.boostItemLevelFrameTallPopup, .boostItemLevelFrameTallPopupReducedLevel {
+	height: 32px;
+	top: 1px;
+	left: 1px;
+    width: 60px;
+    pointer-events: none
+}
+
+.boostItemLevelFrame, .boostItemLevelFrameReducedLevel,
+.boostItemLevelFrameTall, .boostItemLevelFrameTallReducedLevel, 
+.boostItemLevelFrameTallPopup, .boostItemLevelFrameTallPopupReducedLevel {
+    margin-top: 0px;
+}
+
+.levelFrameTallPopup {
+	height: 30px;
+	width: 45px;
+	margin-top: -16px;
+	margin-left: 1px;
+}
+
+.levelFrameTallPopupReducedLevel {
+	height: 30px;
+	width: 45px;
+	margin-top: -12px;
+	margin-left: 1px;
+}
+
+.levelNumber, .levelNumberReducedLevel, 
+.levelNumberTall, .levelNumberTallReducedLevel, 
+.levelNumberTallPopup, .levelNumberTallPopupReducedLevel,
+.boostItemLevelNumber, .boostItemLevelNumberReducedLevel, 
+.boostItemLevelNumberTall, .boostItemLevelNumberTallReducedLevel, 
+.boostItemLevelNumberTallPopup, .boostItemLevelNumberTallPopupReducedLevel {
+	display: inline-block;
+	position: relative;
+	top: 6px;
+	margin-top: 0px;
+    margin-left: -30px;
+	height: 25px; 
+	width: 16px;
+	padding: 0px 0px 0px 8px; /* Left */
+	pointer-events: none;
+}
+
+.levelNumberTall, .levelNumberTallReducedLevel, 
+.levelNumberTallPopup, .levelNumberTallPopupReducedLevel,
+.boostItemLevelNumberTall, .boostItemReducedLevelNumberTall, 
+.boostItemLevelNumberTallPopup, .boostItemLevelNumberTallPopupReducedLevel {
+	height: 18px;
+	margin-top: 0px;
+	top: 8px;
+	width: 60px;
+    margin-left: -45px;
+}
+
+.boostItemLevelNumber, .boostItemLevelNumberReducedLevel, 
+.boostItemLevelNumberTall, .boostItemReducedLevelNumberTall, 
+.boostItemLevelNumberTallPopup, .boostItemLevelNumberTallPopupReducedLevel {
+    top: 6px;
+}
+
+.levelNumberTallReducedLevel {
+	margin-left: -61px;
+}
+
+.levelNumberTallPopup {
+	top: -5px;
+	margin-left: -35px;
+}
+
+.levelNumberTallPopupReducedLevel {
+	top: 0px;
+	margin-left: -45px;
+}
+
+.xp {
+	display:inline-block;
+	height: 18px; 
+	width: 86px;
+	position: relative;
+	bottom: -8px;
+	margin-left: 8px;
+	overflow: none;
+}
+
+.chararacterSummaryXpBar {
+	display:inline-block;
+	height: 18px; 
+	width: 172px;
+	position: relative;
+	top: 3px;
+	left: 0px;
+	margin-left: 0px;
+	background-size: 172px 180px;
+}
+
+.chararacterSummaryXpText {
+	display:inline-block;
+	height: 18px; 
+	width: 110px;
+	position: relative;
+	margin-left: -140px;
+	top: 0px;
+	left: 0px;	
+}
+
+.prestigeReset {
+	display:inline-block;
+	top: 0px;
+	left: 0px;
+}
+
+.prestigeLevel {
+	display:inline-block;
+	top: 0px;
+	left: 0px;
+}
+
+.afterLevel {
+	display:inline-block;
+	top: 0px;
+	left: 0px;
+}
+
+.dead {
+	display:inline-block;
+	top: 0px;
+	left: 0px;
+}
+
+.deadBG {
+	background-color: #CCBBBB;
+}
+
+.xpBar0DoubleWidth, .xpBar10DoubleWidth, .xpBar20DoubleWidth, .xpBar30DoubleWidth, .xpBar40DoubleWidth, 
+.xpBar50DoubleWidth, .xpBar60DoubleWidth, .xpBar70DoubleWidth, .xpBar80DoubleWidth, .xpBar90DoubleWidth {
+	background-image: url('../images/xpBars.png');
+	height: 18px; 
+	width: 172px;
+	background-repeat: no-repeat;
+	background-size: 172px 180px;
+}
+
+.xpBar0, .xpBar10, .xpBar20, .xpBar30, .xpBar40, .xpBar50, .xpBar60, .xpBar70, .xpBar80, .xpBar90 {
+	background-image: url('../images/xpBars.png');
+	height: 18px;
+	width: 86px;
+	background-repeat: no-repeat;
+}
+
+.xpBar0, .xpBar0DoubleWidth {
+	background-position: 0px 0px;
+}
+
+.xpBar10, .xpBar10DoubleWidth {
+	background-position: 0px -18px;
+}
+
+.xpBar20, .xpBar20DoubleWidth {
+	background-position: 0px -36px;
+}
+
+.xpBar30, .xpBar30DoubleWidth {
+	background-position: 0px -54px;
+}
+
+.xpBar40, .xpBar40DoubleWidth {
+	background-position: 0px -72px;
+}
+
+.xpBar50, .xpBar50DoubleWidth {
+	background-position: 0px -90px;
+}
+
+.xpBar60, .xpBar60DoubleWidth {
+	background-position: 0px -108px;
+}
+
+.xpBar70, .xpBar70DoubleWidth {
+	background-position: 0px -126px;
+}
+
+.xpBar80, .xpBar80DoubleWidth {
+	background-position: 0px -144px;
+}
+
+.xpBar90, .xpBar90DoubleWidth {
+	background-position: 0px -162px;
+}
+
+.classIconSpan {
+	display:inline-block;
+	position: relative; 
+	top: 10px; 
+	left: 22px; 
+	z-index: 50;
+}
+
+.classIconRecommendedSpan {
+	top: 0px; 
+	left: 0px; 
+}
+
+.classIconMELEE25, .classIconMAGIC25, .classIconHEALER25, .classIconRANGE25, .classIconSNEAKY25, 
+.classIconBUFF25, .classIconPETS25, .classIconMOBILE25, .classIconBARD25, .classIconANY25 {
+	background-image: url('../images/ClassIcons.png');
+	height: 25px;
+	width: 25px;
+	background-size: 75px 75px;
+	background-repeat: no-repeat;
+}
+
+.classIconMELEE25 {
+	background-position: 0px 0px;
+}
+
+.classIconMAGIC25 {
+	background-position: -25px 0px;
+}
+
+.classIconHEALER25 {
+	background-position: -50px 0px;
+}
+
+.classIconRANGE25 {
+	background-position: 0px -25px;
+}
+
+.classIconSNEAKY25 {
+	background-position: -25px -25px;
+}
+
+.classIconBUFF25 {
+	background-position: -50px -25px;
+}
+
+.classIconPETS25 {
+	background-position: 0px -50px;
+}
+
+.classIconMOBILE25 {
+	background-position: -25px -50px;
+}
+
+.classIconBARD25 {
+	background-position: -50px -50px;
+}
+
+.classIconMELEE50, .classIconMAGIC50, .classIconHEALER50, .classIconRANGE50, .classIconSNEAKY50, 
+.classIconBUFF50, .classIconPETS50, .classIconMOBILE50, .classIconBARD50, .classIconANY50 {
+	background-image: url('../images/ClassIcons.png');
+	height: 50px;
+	width: 50px;
+	background-size: 150px 150px;
+	background-repeat: no-repeat;
+}
+
+.classIconMELEE50 {
+	background-position: 0px 0px;
+}
+
+.classIconMAGIC50 {
+	background-position: -50px 0px;
+}
+
+.classIconHEALER50 {
+	background-position: -100px 0px;
+}
+
+.classIconRANGE50 {
+	background-position: 0px -50px;
+}
+
+.classIconSNEAKY50 {
+	background-position: -50px -50px;
+}
+
+.classIconBUFF50 {
+	background-position: -100px -50px;
+}
+
+.classIconPETS50 {
+	background-position: 0px -100px;
+}
+
+.classIconMOBILE50 {
+	background-position: -50px -100px;
+}
+
+.classIconBARD50 {
+	background-position: -100px -100px;
+}
+
+.classIconMELEE100, .classIconMAGIC100, .classIconHEALER100, .classIconRANGE100, .classIconSNEAKY100, 
+.classIconBUFF100, .classIconPETS100, .classIconMOBILE100, .classIconBARD100, .classIconANY100 {
+	background-image: url('../images/ClassIcons.png');
+	height: 100px;
+	width: 100px;
+	background-size: 300px 300px;
+	background-repeat: no-repeat;
+}
+
+.classIconMELEE100 {
+	background-position: 0px 0px;
+}
+
+.classIconMAGIC100 {
+	background-position: -100px 0px;
+}
+
+.classIconHEALER100 {
+	background-position: -200px 0px;
+}
+
+.classIconRANGE100 {
+	background-position: 0px -100px;
+}
+
+.classIconSNEAKY100 {
+	background-position: -100px -100px;
+}
+
+.classIconBUFF100 {
+	background-position: -200px -100px;
+}
+
+.classIconPETS100 {
+	background-position: 0px -200px;
+}
+
+.classIconMOBILE100 {
+	background-position: -100px -200px;
+}
+
+.classIconBARD100 {
+	background-position: -200px -200px;
+}
+
+
+
+.classIconMELEE75, .classIconMAGIC75, .classIconHEALER75, .classIconRANGE75, .classIconSNEAKY75, 
+.classIconBUFF75, .classIconPETS75, .classIconMOBILE75, .classIconBARD75, .classIconANY75 {
+	background-image: url('../images/ClassIcons.png');
+	height: 75px;
+	width: 75px;
+	background-size: 225px 225px;
+	background-repeat: no-repeat;
+}
+
+.classIconMELEE75 {
+	background-position: 0px 0px;
+}
+
+.classIconMAGIC75 {
+	background-position: -75px 0px;
+}
+
+.classIconHEALER75 {
+	background-position: -150px 0px;
+}
+
+.classIconRANGE75 {
+	background-position: 0px -75px;
+}
+
+.classIconSNEAKY75 {
+	background-position: -75px -75px;
+}
+
+.classIconBUFF75 {
+	background-position: -150px -75px;
+}
+
+.classIconPETS75 {
+	background-position: 0px -150px;
+}
+
+.classIconMOBILE75 {
+	background-position: -75px -150px;
+}
+
+.classIconBARD75 {
+	background-position: -150px -150px;
+}
+
+.charSlotIconSpan {
+	display:inline-block;
+	position: relative; 
+	top: 0px; 
+	left: 10px; 
+	z-index: 50;
+}
+
+.charSlotSpan {
+	display:inline-block;
+	position: relative; 
+	top: 0px;
+	left: 0px;
+	margin-top: 0px;
+	margin-left: 0px;
+	width: 25px;
+	height: 25px;
+}
+
+.charSlotDetailsSpan {
+	display:inline-block;
+	position: relative; 
+	top: -10px;
+	left: 0px;
+	text-align: left;
+	width: 35px;
+	height: 25px;
+}
+
+.charSlotDetailsImageSpan {
+	display:inline-block;
+	position: relative; 
+	top: 0px;
+	left: 0px;
+	width: 25px;
+	height: 25px;
+}
+
+.charSlotIconSHOULDERS, .charSlotIconHEAD, .charSlotIconAMULET, .charSlotIconBROACH, .charSlotIconCHEST, 
+.charSlotIconRING_LEFT, .charSlotIconRING_RIGHT, .charSlotIconBRACERS, .charSlotIconLEGS, .charSlotIconHANDS,
+.charSlotIconMAIN_WEAPON, .charSlotIconFEET, .charSlotIconOFF_HAND {
+	background-image: url('../images/CharSlotIcons.png');
+	height: 25px;
+	width: 25px;
+	background-size: 75px 100px;
+	background-repeat: no-repeat;
+}
+
+/* Shoulder icon just slightly smaller so there is space in the details pop up for the word 'Shoulders' */
+.charSlotIconSHOULDERS {
+	background-position: 0px 0px;
+    width: 20px;
+    background-size: 60px 100px;
+    margin-left: 5px;
+}
+
+.charSlotIconHEAD {
+	background-position: -25px 0px;
+}
+
+.charSlotIconAMULET {
+	background-position: -50px 0px;
+}
+
+.charSlotIconBROACH {
+	background-position: 0px -25px;
+}
+
+.charSlotIconCHEST {
+	background-position: -25px -25px;
+}
+
+.charSlotIconRING_LEFT {
+	background-position: -50px -25px;
+}
+
+.charSlotIconRING_RIGHT {
+	background-position: -50px -25px;
+}
+
+.charSlotIconBRACERS {
+	background-position: 0px -50px;
+}
+
+.charSlotIconLEGS {
+	background-position: -25px -50px;
+}
+
+.charSlotIconHANDS {
+	background-position: -50px -50px;
+}
+
+.charSlotIconMAIN_WEAPON {
+	background-position: 0px -75px;
+}
+
+.charSlotIconFEET {
+	background-position: -25px -75px;
+}
+
+.charSlotIconOFF_HAND {
+	background-position: -50px -75px;
+}
+
+
+.charSlotEquipment {
+	height: 55px;
+	position: relative;
+	z-index: 50;
+}
+
+.charSlotEmptyEquipment {
+	height: 55px;
+	position: relative;
+	z-index: 10;
+}
+
+.charSlotIconLargeSHOULDERS, .charSlotIconLargeHEAD, .charSlotIconLargeAMULET, .charSlotIconLargeBROACH, .charSlotIconLargeCHEST, 
+.charSlotIconLargeRING_LEFT, .charSlotIconLargeRING_RIGHT, .charSlotIconLargeBRACERS, .charSlotIconLargeLEGS, .charSlotIconLargeHANDS,
+.charSlotIconLargeMAIN_WEAPON, .charSlotIconLargeFEET, .charSlotIconLargeOFF_HAND {
+	background-image: url('../images/CharSlotIcons.png');
+	height: 50px;
+	width: 50px;
+	background-size: 150px 200px;
+	background-repeat: no-repeat;
+	display: block;
+    position: relative;
+    top: 5px;
+    left: 20px;
+    z-index: 25;
+	pointer-events: none;
+}
+
+.charSlotIconLargeSHOULDERS {
+	background-position: 0px 0px;
+}
+
+.charSlotIconLargeHEAD {
+	background-position: -50px 0px;
+}
+
+.charSlotIconLargeAMULET {
+	background-position: -100px 0px;
+}
+
+.charSlotIconLargeBROACH {
+	background-position: 0px -50px;
+}
+
+.charSlotIconLargeCHEST {
+	background-position: -50px -50px;
+}
+
+.charSlotIconLargeRING_LEFT {
+	background-position: -100px -50px;
+}
+
+.charSlotIconLargeRING_RIGHT {
+	background-position: -100px -50px;
+}
+
+.charSlotIconLargeBRACERS {
+	background-position: 0px -100px;
+}
+
+.charSlotIconLargeLEGS {
+	background-position: -50px -100px;
+}
+
+.charSlotIconLargeHANDS {
+	background-position: -100px -100px;
+}
+
+.charSlotIconLargeMAIN_WEAPON {
+	background-position: 0px -150px;
+}
+
+.charSlotIconLargeFEET {
+	background-position: -50px -150px;
+}
+
+.charSlotIconLargeOFF_HAND {
+	background-position: -100px -150px;
+}
+
+
+
+.charSlotIconNeedMissingSHOULDERS, .charSlotIconNeedMissingHEAD, .charSlotIconNeedMissingAMULET, .charSlotIconNeedMissingBROACH, .charSlotIconNeedMissingCHEST, 
+.charSlotIconNeedMissingRING_LEFT, .charSlotIconNeedMissingRING_RIGHT, .charSlotIconNeedMissingBRACERS, .charSlotIconNeedMissingLEGS, .charSlotIconNeedMissingHANDS,
+.charSlotIconNeedMissingMAIN_WEAPON, .charSlotIconNeedMissingFEET, .charSlotIconNeedMissingOFF_HAND {
+	background-image: url('../images/CharSlotIcons.png');
+	height: 20px;
+	width: 20px;
+	background-size: 60px 80px;
+	background-repeat: no-repeat;
+	-webkit-filter: url("/assets/filters.svg#monochrome-red"); 
+	-moz-filter: url("/assets/filters.svg#monochrome-red");
+	-ms-filter: url("/assets/filters.svg#monochrome-red");
+	-o-filter: url("/assets/filters.svg#monochrome-red");
+	filter: url("/assets/filters.svg#monochrome-red");
+}
+
+.localModeNeedMissing {
+	-webkit-filter: url("/dungeon/assets/filters.svg#monochrome-red"); 
+	-moz-filter: url("/dungeon/assets/filters.svg#monochrome-red");
+	-ms-filter: url("/dungeon/assets/filters.svg#monochrome-red");
+	-o-filter: url("/dungeon/assets/filters.svg#monochrome-red");
+	filter: url("/dungeon/assets/filters.svg#monochrome-red");
+}
+
+.charSlotIconNeedLowSHOULDERS, .charSlotIconNeedLowHEAD, .charSlotIconNeedLowAMULET, .charSlotIconNeedLowBROACH, .charSlotIconNeedLowCHEST, 
+.charSlotIconNeedLowRING_LEFT, .charSlotIconNeedLowRING_RIGHT, .charSlotIconNeedLowBRACERS, .charSlotIconNeedLowLEGS, .charSlotIconNeedLowHANDS,
+.charSlotIconNeedLowMAIN_WEAPON, .charSlotIconNeedLowFEET, .charSlotIconNeedLowOFF_HAND {
+	background-image: url('../images/CharSlotIcons.png');
+	height: 20px;
+	width: 20px;
+	background-size: 60px 80px;
+	background-repeat: no-repeat;
+	-webkit-filter: sepia(100%);
+	-moz-filter: sepia(100%);
+	-ms-filter: sepia(100%);
+	-o-filter: sepia(100%);
+	filter: sepia(100%);
+}
+
+.charSlotIconNeedMissingSHOULDERS, .charSlotIconNeedLowSHOULDERS {
+	background-position: 0px 0px;
+}
+
+.charSlotIconNeedMissingHEAD, .charSlotIconNeedLowHEAD {
+	background-position: -20px 0px;
+}
+
+.charSlotIconNeedMissingAMULET, .charSlotIconNeedLowAMULET {
+	background-position: -40px 0px;
+}
+
+.charSlotIconNeedMissingBROACH, .charSlotIconNeedLowBROACH {
+	background-position: 0px -20px;
+}
+
+.charSlotIconNeedMissingCHEST, .charSlotIconNeedLowCHEST {
+	background-position: -20px -20px;
+}
+
+.charSlotIconNeedMissingRING_LEFT, .charSlotIconNeedLowRING_LEFT {
+	background-position: -40px -20px;
+}
+
+.charSlotIconNeedMissingRING_RIGHT, .charSlotIconNeedLowRING_RIGHT {
+	background-position: -40px -20px;
+}
+
+.charSlotIconNeedMissingBRACERS, .charSlotIconNeedLowBRACERS {
+	background-position: 0px -40px;
+}
+
+.charSlotIconNeedMissingLEGS, .charSlotIconNeedLowLEGS {
+	background-position: -20px -40px;
+}
+
+.charSlotIconNeedMissingHANDS, .charSlotIconNeedLowHANDS {
+	background-position: -40px -40px;
+}
+
+.charSlotIconNeedMissingMAIN_WEAPON, .charSlotIconNeedLowMAIN_WEAPON {
+	background-position: 0px -60px;
+}
+
+.charSlotIconNeedMissingFEET, .charSlotIconNeedLowFEET {
+	background-position: -20px -60px;
+}
+
+.charSlotIconNeedMissingOFF_HAND, .charSlotIconNeedLowOFF_HAND {
+	background-position: -40px -60px;
+}
+
+.boostItem {
+	display: inline-block;
+	height: 55px;
+	width: 90px;
+	position: relative;
+	z-index: 10;
+}
+
+.boostItemEmpty {
+	height: 55px;
+	position: relative;
+	z-index: 10;
+}
+
+.boostItemLevel {
+	display: inline-block;
+	position: relative;
+	height: 30px;
+	width: 30px;
+	top: -42px;
+	left: -1px;
+	margin-left: 0px;
+	z-index: 10;
+	pointer-events: none;
+}
+
+.boostItemRedeem {
+	display: inline-block;
+	height: 26px;
+	width: 30px;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	margin-left: -30px;
+	z-index: 10;
+	overflow: hidden;
+}
+
+.boostItemType {
+	display: inline-block;
+	position: relative;
+	margin-top: 0px;
+    top: 0px;
+    left: 0px;
+    margin-left: 0px;
+	width: 60px;
+	height: 55px;
+	overflow: hidden;
+	pointer-events: none;
+}
+
+.boostItemIconIMPROVE_QUALITY, .boostItemIconDUNGEON_TOKENS, .boostItemIconDUNGEON_SPEED, 
+.boostItemIconLEVEL_UP, .boostItemIconRESURRECTION, .boostItemIconENCHANT_RANGE, 
+.boostItemIconENCHANT_IMPROVE_RANGE, .boostItemIconENCHANT_REMOVE_CURSE, .boostItemIconENCHANT_TYPE, 
+.boostItemIconXP_BOOST, .boostItemIconMAGIC_FIND, .boostItemIconCHANGE_NAME
+ {
+	background-image: url('../images/BoostItemTypeIcons.png');
+	width: 60px;
+	height: 55px;
+	background-size: 180px 220px;
+	background-repeat: no-repeat;
+}
+
+.boostItemIconIMPROVE_QUALITY {
+	background-position: 0px 0px;
+}
+
+.boostItemIconDUNGEON_TOKENS {
+	background-position: -60px 0px;
+}
+
+.boostItemIconDUNGEON_SPEED {
+	background-position: -120px 0px;
+}
+
+.boostItemIconLEVEL_UP {
+	background-position: -0px -55px;
+}
+
+.boostItemIconRESURRECTION {
+	background-position: -60px -55px;
+}
+
+.boostItemIconENCHANT_RANGE {
+	background-position: -120px -55px;
+}
+
+.boostItemIconENCHANT_IMPROVE_RANGE {
+	background-position: 0px -110px;
+}
+
+.boostItemIconENCHANT_REMOVE_CURSE {
+	background-position: -60px -110px;
+}
+
+.boostItemIconENCHANT_TYPE {
+	background-position: -120px -110px;
+}
+
+.boostItemIconXP_BOOST {
+	background-position: 0px -165px;
+}
+
+.boostItemIconMAGIC_FIND {
+	background-position: -60px -165px;
+}
+
+.boostItemIconCHANGE_NAME {
+	background-position: -120px -165px;
+}
+
+.improveQualityBoostIcon, .dungeonTokensBoostIcon, .dungeonSpeedBoostIcon, 
+.levelUpBoostIcon, .resurrectBoostIcon, .enchantRangeBoostIcon, 
+.improveRangeBoostIcon, .removeCurseBoostIcon, .enchantTypeBoostIcon, 
+.xpBoostIcon, .magicFindBoostIcon, .changeNameBoostIcon
+ {
+	background-image: url('../images/BoostItemTypeIcons.png');
+	width: 18px;
+	height: 16px;
+	background-size: 54px 64px;
+	background-repeat: no-repeat;
+}
+
+.improveQualityBoostIcon {
+	display: inline-block;
+	background-position: 0px 0px;	
+}
+
+.dungeonTokensBoostIcon {
+	display: inline-block;
+	background-position: -18px 0px;	
+}
+
+.dungeonSpeedBoostIcon {
+	display: inline-block;
+	background-position: -36px 0px;	
+}
+
+.levelUpBoostIcon {
+	display: inline-block;
+	background-position: 0px -16px;
+}
+
+.resurrectBoostIcon {
+	display: inline-block;
+	background-position: -18px -16px;
+}
+
+.enchantRangeBoostIcon {
+	display: inline-block;
+	background-position: -36px -16px;
+}
+
+.improveRangeBoostIcon {
+	display: inline-block;
+	background-position: 0px -32px;
+}
+
+.removeCurseBoostIcon {
+	display: inline-block;
+	background-position: -18px -32px;
+}
+
+.enchantTypeBoostIcon {
+	display: inline-block;
+	background-position: -36px -32px;
+}
+
+.xpBoostIcon {
+	display: inline-block;
+	background-position: 0px -48px;
+}
+
+.magicFindBoostIcon {
+	display: inline-block;
+	background-position: -18px -48px;
+}
+
+.changeNameBoostIcon {
+	display: inline-block;
+	background-position: -36px -48px;
+}
+
+.peopleRed, .peopleYellow, .peopleGreen, .peopleBlue, .peopleBlueLocalMode, .peopleOrange, .peopleOrangeLocalMode
+ {
+ 	display: inline-block;
+	background-image: url('../images/People.png');
+	width: 20px;
+	height: 20px;
+	background-size: 20px 60px;
+	background-repeat: no-repeat;
+}
+
+.peopleRed {
+	background-position: 0px 0px;
+}
+
+.peopleYellow {
+	background-position: 0px -20px;
+}
+
+.peopleGreen {
+	background-position: 0px -40px;
+}
+
+.peopleBlue {
+	background-position: 0px 0px;
+	-webkit-filter: url("/assets/filters.svg#monochrome-blue"); 
+	-moz-filter: url("/assets/filters.svg#monochrome-blue");
+	-ms-filter: url("/assets/filters.svg#monochrome-blue");
+	-o-filter: url("/assets/filters.svg#monochrome-blue");
+	filter: url("/assets/filters.svg#monochrome-blue");
+}
+
+.peopleBlueLocalMode {
+	background-position: 0px 0px;
+	-webkit-filter: url("/dungeon/assets/filters.svg#monochrome-blue"); 
+	-moz-filter: url("/dungeon/assets/filters.svg#monochrome-blue");
+	-ms-filter: url("/dungeon/assets/filters.svg#monochrome-blue");
+	-o-filter: url("/dungeon/assets/filters.svg#monochrome-blue");
+	filter: url("/dungeon/assets/filters.svg#monochrome-blue");
+}
+
+.peopleOrange {
+	background-position: 0px 0px;
+	-webkit-filter: url("/assets/filters.svg#monochrome-orange"); 
+	-moz-filter: url("/assets/filters.svg#monochrome-orange");
+	-ms-filter: url("/assets/filters.svg#monochrome-orange");
+	-o-filter: url("/assets/filters.svg#monochrome-orange");
+	filter: url("/assets/filters.svg#monochrome-orange");
+}
+
+.peopleOrangeLocalMode {
+	background-position: 0px 0px;
+	-webkit-filter: url("/dungeon/assets/filters.svg#monochrome-orange"); 
+	-moz-filter: url("/dungeon/assets/filters.svg#monochrome-orange");
+	-ms-filter: url("/dungeon/assets/filters.svg#monochrome-orange");
+	-o-filter: url("/dungeon/assets/filters.svg#monochrome-orange");
+	filter: url("/dungeon/assets/filters.svg#monochrome-orange");
+}
+
+.equipmentType, .equipmentTypeReducedLevel {
+	display: inline-block;
+	position: relative;
+	margin-top: -10px;
+    top: -20px;
+    left: 45px;
+    margin-left: -32px;
+	width: 25px;
+	height: 25px;
+	overflow: hidden;
+}
+
+.equipmentTypeReducedLevel {
+	top: -20px;
+}
+
+.equipmentTypePopup, .equipmentTypePopupReducedLevel {
+	display:inline-block;
+	position: relative; 
+	top: 0px;
+	left: 0px;
+	margin-left: -55px;
+	width: 60px;
+	height: 25px;
+	overflow: hidden;
+}
+
+.equipmentQuality, .equipmentQualityReducedLevel, .equipmentQualityPopup, .equipmentQualityPopupReducedLevel {
+	display: inline-block;
+	position: relative;
+    top: 0px;
+    left: 7px;
+    width: 50px;
+}
+
+.equipmentQualityReducedLevel {
+}
+
+.equipmentQualityPopup, .equipmentQualityPopupReducedLevel {
+	left: -4px;
+	margin-left: -25px;
+}
+
+.equipmentQualityPopup {
+}
+
+.equipmentQualityPopupReducedLevel {
+	margin-left: -15px;
+}
+
+.profileSpan {
+	margin: 0px;
+	height: calc(100% - 50px);
+	width: 99%;
+	position: absolute;
+	top: 50px;
+	left: 0%;
+	overflow: hidden;
+}
+
+.profileTitle {
+	display: inline-block;
+	position: absolute;
+    top: 0px;
+    left: 7px;
+    width: 300px;
+    height: 20px;
+}
+
+.profileHiscores {
+	display: inline-block;
+	position: absolute;
+    top: 30px;
+    left: 7px;
+    width: 90%;
+    height: 90%;
+}
+
+.fb-like {
+	display: inline-block;
+	position: absolute;
+	top: 3px;
+	right: 50px;
+	height: 30px;
+	width: 140px;
+}
+
+/* Touch screen fixes for scroll bars */
+.frame::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.frame::-webkit-scrollbar:vertical {
+    width: 11px;
+}
+
+.frame::-webkit-scrollbar:horizontal {
+    height: 11px;
+}
+
+.frame::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 2px solid white; /* should match background, can't be transparent */
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.frame::-webkit-scrollbar-track { 
+    background-color: #fff; 
+    border-radius: 8px; 
+} 

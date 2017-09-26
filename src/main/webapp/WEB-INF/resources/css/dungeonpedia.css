@@ -1,0 +1,197 @@
+.dungeonpediaFrame {
+	margin: 0px;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+    pointer-events: none;
+}
+
+span .ui-resizable {
+    position: absolute;
+}
+
+.dungeonpediaTitle {
+	margin: 0px;
+	position: absolute;
+	top: 0px;
+	left: 2;
+	width: 120px;
+	height: 25px;
+}
+
+.dungeonpediaTitle h1 {
+	font-size:18px;
+}
+
+.dungeonpediaMenu {
+	margin: 2px;
+	position: absolute;
+	top: 0px;
+	left: 130px;
+	height: 15px;
+	width: 360px;
+}
+
+.dungeonpediaSubMenu {
+	margin: 0px;
+	position: absolute;
+	top: 0px;
+	right: 30px;
+	height: 15px;
+    z-index: 200;
+}
+
+.dungeonpediaSubMenu .menuOption {
+	padding: 0px 1px 0px 1px;
+	margin: -1px 0px;
+}
+
+.dungeonpediaTab {
+	float: left;
+	margin: 35px 0 0 0;
+	width: 100px;
+	height: calc(100% - 35px);
+}
+
+.dungeonpediaTab ul
+{
+   list-style: none;
+   text-align: center;
+   -webkit-padding-start: 0px
+}
+
+.dungeonpediaTab ul li
+{
+   border-top: 1px solid #666666;
+   border-right: 1px solid #666666;
+   border-bottom: 1px solid #666666;
+   border-left: 1px solid #666666;
+   background-color: #dddddd;
+   margin: 8px 0;
+}
+
+.dungeonpediaTab .dungeonpediaTabSelected {
+	border-bottom: 3px solid #666666;
+}
+
+.dungeonpediaCloseFrame {
+	position: absolute;
+	top: 0px;
+	right: 5px;
+	height: 15px;
+	width: 5%;
+	min-width: 15px;
+	text-align: right;
+	text-color: red;
+}
+
+.dungeonpediaEndBar {
+	margin: 0px;
+	position: absolute;
+	top: 22px;
+	left: 0px;
+	height: 5px;
+	width: 100%;
+}
+
+.dungeonpediaContentFrame {
+	width: 660px;
+	height: 400px;
+	max-width: 1000px;
+	min-width: 510px;
+	min-height: 100px;
+	max-height: 1000px;
+	z-index: 150;
+	background: #d2b48c;
+  -webkit-box-shadow: inset 0 0 50px 20px #8b6736;
+  box-shadow: inset 0 0 50px 20px #8b6736;
+}
+
+.dungeonpediaContentInnerFrame {
+	position: absolute;
+	top: 25px;
+	width: 99%;
+	height: calc(99% - 25px);
+    overflow-y: auto;
+}
+
+.dungeonpediaContent {
+	width: 90%;
+	max-width: 1000px;
+	min-width: 510px;
+	height: 90%;
+	min-height: 100px;
+	max-height: 1000px;
+	left: 5%;
+	top: 5%;
+	position: absolute;
+	pointer-events: all;
+    text-align: left; 
+    background-color: #C0C0C0;
+    color:#111; 
+    margin-right:2px; 
+    font-size:18px; 
+    overflow-y: auto;
+}
+
+.dungeonpediaContentInner {
+	width: 99%;
+	height: 99%;
+	position: absolute;
+	left: 0px;
+    top: 0px;
+	pointer-events: all;
+    overflow-y: auto;
+}
+
+.dungeonpediaContentInner h1 {
+	font-size: 1.3em;
+}
+
+.dungeonpediaContentInnerWithSubMenu {
+	width: 99%;
+	height: 99%;
+	position: absolute;
+	left: 0px;
+    top: 0px;
+	pointer-events: all;
+    overflow-y: auto;
+}
+
+
+.dungeonpediaContentInnerTab {
+	width: calc(100% - 105px);
+	height: calc(100% - 2px);
+	position: absolute;
+	left: 105px;
+    top: 2px;
+	pointer-events: all;
+    overflow-y: auto;
+}
+
+.dungeonpediaCharClassDetails {	
+	height: calc(100% - 220px);
+    width: calc(100% - 2px);
+	background-color: #AAAA80;
+	border: 1px solid red;
+	overflow: auto;
+	float: left;
+}
+
+.dungeonpediaSpellDetails {
+	height: 90px;
+    width: calc(100% - 2px);
+	background-color: #AAAA80;
+	border: 1px solid red;
+	overflow: auto;
+	float: left;
+}
+
+.dungeonpediaAttributeDetails {
+	height: 144px;
+    width: calc(100% - 2px);
+	background-color: #AAAA80;
+	border: 1px solid red;
+	overflow: auto;
+	float: left;
+}

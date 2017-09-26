@@ -1,0 +1,635 @@
+tr.stripped:nth-child(even) {
+	background-color: #add8d1;
+}
+tr.stripped:nth-child(odd) {
+	background-color: #add8ff;
+}
+
+.icon {
+	margin: 0px;
+	position: absolute;
+	top: 2px;
+	left: 8px;
+	width: 50px;
+	height: 25px;
+}
+
+.icon h1 {
+	font-size: 1.2em;
+	color: lightblue;
+}
+
+.messagesFrame {
+	margin: 0px;
+	position: absolute;
+	top: 70px;
+	left: 40px;
+	z-index: 600;
+	display: none;
+}
+
+.messagesContentFrame {
+	max-width: 1000px;
+	min-width: 510px;
+	min-height: 100px;
+	max-height: 100%;
+	z-index: 150;
+	background: #d2b48c;
+    -webkit-box-shadow: inset 0 0 50px 20px #8b6736;
+    box-shadow: inset 0 0 50px 20px #8b6736;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+	touch-action: pan-y;
+}
+
+.messagesCloseFrame {
+	position: absolute;
+	top: 0px;
+	right: 5px;
+	height: 15px;
+	width: 5%;
+	min-width: 15px;
+	text-align: right;
+	text-color: red;
+}
+
+.messageSpan {
+	display: list-item;
+	clear: both;
+	margin: 1px;
+	border: 2px solid blue;
+}
+
+.messageitemSpan {
+	min-height: 50px;
+}
+
+.debugSpan {
+	margin: 0px;
+	height: 80%;
+	width: 450px;
+	position: absolute;
+	top: 5%;
+	left: 425px;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+	touch-action: pan-y;
+	/*pointer-events: none;*/
+	background-color: #c0c0c0;
+	opacity: 0.6;
+	z-index: 500;
+}
+	
+.summaryFrame {
+	position: absolute;
+	top: 5px;
+	right: 15px;
+	height: 20px;
+	width: 310px;
+	text-align: right;
+}
+	
+.infoSpan {
+	margin: 0px;
+	height: calc(100% - 60px);
+	max-height: calc(100% - 60px);
+	width: 100%;
+	position: absolute;
+	top: 30px;
+	left: 2;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+	touch-action: pan-y;
+}
+	
+.dungeonsSpan {
+	margin: 0px;
+	height: 80%;
+	max-height: 80%;
+	max-width: 506px;
+	width: calc(50% - 150px);  /* 1/2 of 300 */
+	position: absolute;
+	top: 30px;
+	left: 2px;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+	touch-action: pan-y;
+}
+
+.charactersSpan {
+	margin: 0px;
+	height: 80%;
+	max-height: 80%;
+	width: calc(50% - 140px);  /* 1/2 of 300 (- 10) */
+	position: absolute;
+	top: 30px;
+	left: calc(50% - 163px);  /* 1/2 of 302 (+ 12) */ /* Javascript changes to calc(100% - 302px - min((50% - 150px), 506px)) */
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+	touch-action: pan-y;
+}
+
+.characterDetailsSpan {
+	margin: 0px;
+	height: 410px;
+	max-height: 60%;
+	width: 302px;
+	position: absolute;
+	top: 30px;
+	right: 2px;
+	overflow: hidden;
+}
+
+.characterDetailsSummarySpan {
+	margin: 0px;
+	height: calc(81% - 410px);
+	max-height: 60%;
+	min-height: 20%;
+	width: 302px;
+	position: absolute;
+	bottom: calc(20% - 50px);
+	right: 2px;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+	touch-action: pan-y;
+}
+
+.enchantSpan {
+	margin: 0px;
+	height: calc(20% - 50px);
+	max-height: calc(20% - 50px);
+	width: 105px;
+	position: absolute;
+	bottom: 2px;
+	left: 2px;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+	touch-action: pan-y;
+	background-color: yellow;
+	border: 2px solid yellow;
+}
+
+.stashSpan {
+	margin: 0px;
+	height: calc(20% - 50px);
+	max-height: calc(20% - 50px);
+	width: calc(99% - 220px);
+	position: absolute;
+	bottom: 2px;
+	left: 112px;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+	touch-action: pan-y;
+}
+
+.salvageSpan {
+	margin: 0px;
+	height: calc(20% - 50px);
+	max-height: calc(20% - 50px);
+	width: 105px;
+	position: absolute;
+	bottom: 2px;
+	right: 2px;
+	overflow: auto;
+	background-color: red;
+	border: 2px solid red;
+}
+
+.accountSpan {
+	margin: 0px;
+	height: calc(100% - 50px);
+	width: 99%;
+	position: absolute;
+	top: 50px;
+	left: 0%;
+	overflow: hidden;
+}
+
+.charDrag {
+	height: 100px;
+	width: 120px;
+	background-color: green;
+	border: 2px solid yellow;
+	overflow: hidden;
+	float: left;
+}
+
+.charDrop {
+	height: 100px;
+	width: 120px;
+	background-color: #6090B0;
+	border: 2px solid green;
+	overflow: hidden;
+	float: left;
+}
+
+.requiredParty{
+	border: 2px solid blue;
+}
+
+.optionalParty {
+	border: 2px solid GoldenRod;
+	background-color: #906030;
+}
+
+.itemDrag,  .found_itemDrag {
+	height: 55px;
+	width: 90px;
+	background-color: green;
+	border: 2px solid yellow;
+	overflow: hidden;
+	float: left;
+}
+
+.itemDrop,  .found_itemDrop {
+	height: 55px;
+	width: 90px;
+	background-color: #6090B0;
+	border: 2px solid green;
+	overflow: hidden;
+	float: left;
+}
+
+.found_itemLarge, .found_itemDrag, .found_itemDrop {
+	border: 2px solid blue;
+}
+
+.boostItemDrag {
+	height: 55px;
+	width: 90px;
+	background-color: grey;
+	border: 2px solid yellow;
+	overflow: hidden;
+	float: left;
+}
+
+.boostItemDrop {
+	height: 55px;
+	width: 90px;
+	background-color: #6090B0;
+	border: 2px solid green;
+	overflow: hidden;
+	float: left;
+}
+
+.inDungeon {
+	display: inline-block;
+	position: relative;
+	top: -144px;
+	margin-top: 0px;
+	left: 35px;
+	width: 85px;
+	height: 25px;
+	overflow: hidden;
+}
+
+.isDead {
+	display: inline-block;
+	position: relative;
+	top: -140px;
+	margin-top: -60px;
+	left: 5px;
+	width: 110px;
+	text-align: center;
+	vertical-align: middle;
+	overflow: hidden;	
+	color: red;
+	border-radius: 6px;
+	background-color: black;
+	opacity: 0.5;
+	overflow: hidden;
+}
+
+.needEquipmentSlot {
+	float: left;
+	width: 20px;
+	height: 20px;
+}
+
+.runAdventures {
+	float: left; 
+	width: 60px; 
+	height: 30px; 
+	margin: 0px; 
+	text-align: center;
+	font-size: 0.8em;
+}
+
+.toggleEquipmentWarnings {
+	float: left; 
+	width: 63px; 
+	height: 30px; 
+	margin: 0px; 
+	text-align: center;
+	font-size: 0.8em;	
+}
+
+.characterNeedEquipment {
+	display: none;
+	position: relative;
+	float: left;
+	height: 100px;
+	width: 60px;
+	overflow: hidden;
+	margin-top: 0px;
+	margin-left: -90px;
+	z-index: 70;
+	opacity: 0.8;
+	background-color: lightslategrey;
+	pointer-events: none;
+}
+
+.accountTitle {
+	display: inline-block;
+	position: absolute;
+    top: 0px;
+    left: 7px;
+    width: 500px;
+    height: 20px;
+}
+
+.accountDetails {
+	display: inline-block;
+	position: absolute;
+    top: 30px;
+    left: 7px;
+    width: 300px;
+    height: 250px;
+}
+
+.accountHiscore {
+	display: inline-block;
+	position: absolute;
+    top: 30px;
+    left: 400px;
+    width: 400px;
+}
+
+.accountAchievements {
+	display: inline-block;
+	position: absolute;
+    top: 30px;
+    left: 15px;
+    width: 90%;
+}
+
+.hiscoreTitle {
+	display: inline-block;
+	position: absolute;
+    top: 0px;
+    left: 7px;
+    width: 300px;
+    height: 20px;
+}
+
+.hiscoreDetails {
+	display: inline-block;
+	position: absolute;
+    top: 30px;
+    left: 7px;
+    width: 90%;
+    height: 90%;
+}
+
+.accountBoostItemSummary {
+	display: inline-block;
+	position: absolute;
+    top: 30px;
+    left: 7px;
+    width: 90%;
+    height: 90%;
+    overflow: auto;
+}
+
+.accountHistoryDetailsSummary {
+	display: inline-block;
+	position: absolute;
+    top: 30px;
+    left: 7px;
+    width: 295px;
+    height: 90%;
+    overflow: auto;
+}
+
+.accountHistoryDetailsDayHeader {
+	display: inline-block;
+	font-style: normal;
+	font-size: 2.2em;
+	font-weight: bold;
+	color: DarkGreen;
+	height: 55px;
+	width: calc(95% - 330px);
+}
+
+.accountHistoryDetailsDayTime {
+	display: inline-block;
+	font-style: normal;
+	font-size: 1em;
+	font-weight: bold;
+	width: 60px;
+	color: Green;
+}
+
+.accountHistoryDetailsDayType {
+	display: inline-block;
+	font-style: normal;
+	font-size: 1em;
+	font-weight: normal;
+	text-align: right;
+	width: 150px;
+	color: Black;
+}
+
+.accountHistoryDetailsDayValue {
+	display: inline-block;
+	font-style: normal;
+	font-size: 1em;
+	font-weight: normal;
+	text-align: left;
+	width: 50px;
+	color: Black;
+}
+
+.accountHistoryDetailsDays {
+	display: none;
+	float: left;
+	clear: left;
+}
+
+.accountHistoryDetails {
+	display: inline-block;
+	position: absolute;
+    top: 30px;
+    left: 307px;
+    min-width: 400px;
+    width: calc(95% - 330px);
+    height: 90%;
+    overflow: auto;
+}
+
+.accountHistoryMonth {
+	display: inline-block;
+	position: relative;
+	float: left;
+    top: 0px;
+    left: 7px;
+	width: 85px;
+    height: 20px;
+    text-align: left;
+    font-weight: bold;
+	font-size: 1em;
+    color: Green;
+}
+
+.accountHistorySummary {
+	display: inline-block;
+	position: relative;
+    top: 0px;
+    left: 37px;
+	width: 240px;
+	text-align: right;
+	font-size: 1em;
+    color: Black;
+}
+
+.accountHistorySummaryDay {
+	display: inline-block;
+	position: relative;
+	float: left;
+    top: 0px;
+    left: 0px;
+	width: 30px;
+    height: 20px;
+    text-align: right;
+	font-size: 1em;
+    font-weight: bold;
+    color: Blue;
+}
+
+.accountHistorySummaryDay:hover {
+	color: #0080c0;
+}
+
+.accountHistorySummaries {
+	display: inline-block;
+	position: relative;
+    top: 0px;
+    left: 0px;
+	width: 210px;
+	text-align: center;
+	font-size: 1em;
+    color: Black;
+}
+
+.accountHistorySummaryLabel {
+	display: inline-block;
+	position: relative;
+	float: left;
+    top: 0px;
+    left: 0px;
+	width: 160px;
+	text-align: right;
+	font-weight: normal;
+}
+
+.accountHistorySummaryValue {
+	display: inline-block;
+	position: relative;
+	float: left;
+    top: 0px;
+    left: 0px;
+	width: 50px;
+	text-align: left;
+	font-size: 1em;
+    color: Black;
+	font-weight: normal;
+}
+
+
+.dungeonFinished {
+	display: none;
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+
+.dungeonPending {
+	display: inline-block;
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+
+.loginSpan {
+	display: inline-block;
+	float: left;
+	width: 49%;
+}
+
+.newAccountSpan {
+	display: inline-block;
+	float: left;
+	width: 49%;
+}
+
+/* Fackbook styles */
+.fblogintext {
+	font-size: 14px;
+    line-height: 14px;
+    padding: 2px 6px;
+    font-weight: bold;
+    border: none;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.fblogintext:active {
+	border-color:#2f477a;
+}
+
+.fblogintr {
+}
+
+.fblogintd {
+	padding: 0px;
+	border: none;
+}
+
+.fblogodiv {
+	white-space: nowrap;
+}
+
+.fbloginspan{
+	margin: 3px 0 0 3px;
+	float: left;
+	vertical-align: top;
+}
+
+.fblogosvg {
+	height: 16px;
+    width: 16px;
+}
+
+.fblogintable {
+	border:0;
+	border-collapse:collapse;
+	border-spacing:0
+}
+
+.fbloginouterdiv {
+	width: 70px;
+}
+
+.fbloginbutton {
+	background: linear-gradient(#4c69ba, #3b55a0);
+    border-color: #4c69ba;
+    border-radius: 2px;
+    color: #fff;
+    font-family: "Helvetica neue";
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 0 -1px 0 #354c8c;
+    height: 22px;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+}
