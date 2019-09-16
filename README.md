@@ -50,28 +50,33 @@ Create a user with access to the database
 Open the following configuration file in the dungeon project you checked out from git:
 dungeon\src\main\resources\application.eclipse.properties
 Modify the following configuration lines to match your settings:
-db.url
-db.username
-db.password
+  db.url
+  db.username
+  db.password
+  
 Copy the "application.eclipse.properties" over "application.properties"
 
 Start up STS (Eclipse):
-Set the workspace folder (the default one is fine)
-If you get prompted to update at the lower right of the window, do so
-In the servers tab press the link "No servers are available...."Select the "JBoss Community"/"RedHat Jboss/WildFly" folder and then "JBoss AS 7.0"
-Press "Next" twice
-Set the home directory by pressing "Browse" and finding the location you copied the "jboss-as-web-7.0.2.Final" folder to
-Press "Finish"
-Open the  "Window" menu and select "preferences"
-Select "Java->Installed JRE
-Press "Add" and set the "JRE home" to the JDK directory (default location is "C:\Program Files\Java\jdk1.7.0_79")
-Press "Finish"
-Select the JDK check box
-Press "OK"
-Right click in "Package Explorer" panel
-Select "Import->Maven (folder)->Existing Maven Projects" and press "Next"
-Browse to the root folder where you checked out the "dungeon" with git. e.g. "C:/git/dungeon"
-Press "Finish"
-Drag the project down to JBoss
-Start up jboss
-In a browser got to "http://localhost:8080/dungeon/"
+  Set the workspace folder (the default one is fine)
+  If you get prompted to update at the lower right of the window, do so
+  
+  In the servers tab press the link "No servers are available...."Select the "JBoss Community"/"RedHat Jboss/WildFly" folder and then "JBoss AS 7.0"
+  Press "Next" twice
+  Set the home directory by pressing "Browse" and finding the location you copied the "jboss-as-web-7.0.2.Final" folder to
+  Press "Finish"
+  
+  Open the  "Window" menu and select "preferences"
+  Select "Java->Installed JRE
+  Press "Add" and set the "JRE home" to the JDK directory (default location is "C:\Program Files\Java\jdk1.7.0_79")
+  Press "Finish"
+  Select the JDK check box
+  Press "OK"
+  
+  Right click in "Package Explorer" panel
+  Select "Import->Maven (folder)->Existing Maven Projects" and press "Next"
+  Browse to the root folder where you checked out the "dungeon" with git. e.g. "C:/git/dungeon"
+  Press "Finish"
+  
+  Drag the project down to JBoss
+  Start up jboss
+  In a browser got to "http://localhost:8080/dungeon/"
