@@ -21,6 +21,7 @@ http://www.mirrorservice.org/sites/ftp.apache.org/maven/maven-3/3.3.9/binaries/a
 Copy "apache-maven-3.3.9" folder in zip to somewhere on your filesystem.
 
 Open a command prompt window (cmd) and run:
+```
 # Save the host when prompted
 plink -v git@github.com
 
@@ -39,7 +40,7 @@ cd git
 
 # Checkout the repository
 git clone git@github.com:kerrin/dungeon.git
-
+```
 
 Download and Install MYSQL 5.5:
 32 Bit: https://dev.mysql.com/downloads/mysql/5.5.html
