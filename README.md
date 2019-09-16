@@ -57,6 +57,7 @@ Modify the following configuration lines to match your settings:
 Copy the "application.eclipse.properties" over "application.properties"
 
 Start up STS (Eclipse):
+```
   Set the workspace folder (the default one is fine)
    If you get prompted to update at the lower right of the window, do so
    
@@ -80,3 +81,4 @@ Start up STS (Eclipse):
    Drag the project down to JBoss
    Start up jboss
    In a browser got to "http://localhost:8080/dungeon/"
+```
