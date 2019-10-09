@@ -22,6 +22,10 @@
 	    </init-param>
 	</servlet>
 	
+	<listener>
+	    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+	
 	<jsp-config>
 	    <taglib>
 	        <taglib-uri>characterTagLib</taglib-uri>
